@@ -1,5 +1,5 @@
 from tkinter import *
-
+import string
 class EnigmaApp(Tk):
     def __init__(self):
         super().__init__()  # Inicjalizacja klasy bazowej (tk.Tk)
