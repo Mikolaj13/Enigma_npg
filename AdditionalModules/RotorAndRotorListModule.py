@@ -23,3 +23,12 @@ class Rotor:
     def setting_keys(self,s):
         for i in range(0,s):
             self.rotation_keys()
+class Rotor_List:
+    def __init__(self,rotor_list):
+        self.rotor_list = rotor_list
+
+    def turn_values(self, index):
+        self.rotor_list[index%len(self.rotor_list)].rotation_values()
+
+    def turn_keys(self, index):
+        self.rotor_list[index%len(self.rotor_list)].rotation_keys()

@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf9d7de1-2a85-4a5f-8951-297bdc544388" name="Changes" comment="Adding RotorMaker">
-      <change afterPath="$PROJECT_DIR$/AdditionalModules/Extras.py" afterDir="false" />
+    <list default="true" id="bf9d7de1-2a85-4a5f-8951-297bdc544388" name="Changes" comment="Adding extra data necessary for encryption">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainAppFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainAppFile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdditionalModules/RotorAndRotorListModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdditionalModules/RotorAndRotorListModule.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746986743888</updated>
       <workItem from="1746986745149" duration="3684000" />
-      <workItem from="1747415705588" duration="1217000" />
+      <workItem from="1747415705588" duration="3229000" />
     </task>
     <task id="LOCAL-00001" summary="First commmit&#10;&#10;Adding the main file for this project">
       <option name="closed" value="true" />
@@ -101,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746989858222</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding extra data necessary for encryption">
+      <option name="closed" value="true" />
+      <created>1747417279782</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747417279782</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +118,7 @@
     <MESSAGE value="First commmit&#10;&#10;Adding the main file for this project" />
     <MESSAGE value="Adding RotorAndRotorListModule. Creating Rotor Class and methods for turning rotors." />
     <MESSAGE value="Adding RotorMaker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding RotorMaker" />
+    <MESSAGE value="Adding extra data necessary for encryption" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding extra data necessary for encryption" />
   </component>
 </project>
