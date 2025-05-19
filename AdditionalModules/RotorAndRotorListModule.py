@@ -2,6 +2,10 @@ class Rotor:
     def __init__(self,rotor_dictionary,setting=0):
         self.rotor_dictionary = rotor_dictionary
         self.setting = setting
+
+    def __getitem__(self, key):
+        return self.rotor_dictionary[key]
+
     def rotation_values(self):
         keys = list(self.rotor_dictionary.keys())
         values = list(self.rotor_dictionary.values())
@@ -23,7 +27,9 @@ class Rotor:
     def setting_keys(self,s):
         for i in range(0,s):
             self.rotation_keys()
-class Rotor_List:
+
+
+class Rotor_Set:
     def __init__(self,rotor_list):
         self.rotor_list = rotor_list
 

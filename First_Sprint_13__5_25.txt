@@ -1,0 +1,28 @@
+1. Klasa Rotor
+ Inicjalizacja z mapowaniem znaków
+
+ Mechanizm obrotu rotora
+
+ Nadpisanie operatorów klasy
+
+2. Klasa RotorSet
+ Zbiera wiele rotorów
+
+ Implementuje logikę rotacji całego zestawu (przekładanie rotacji na kolejne rotory)
+
+ Nadpisanie operatorów klasy
+
+3. Metody szyfrujące
+
+ Metoda encryption(text: str) -> str
+
+ Metoda decryption(text: str) -> str
+
+4. Testy jednostkowe (pytest)
+ Test Plugboard — czy poprawnie zamienia znaki
+
+ Test Rotor — kodowanie w przód i wstecz
+
+ Test RotorSet — poprawna rotacja i przekazywanie sygnału
+
+ Test EnigmaMachine — poprawność szyfrowania i deszyfrowania
