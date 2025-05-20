@@ -1,6 +1,8 @@
 import random
-
-n_list=list(range(0,26))
+import string
+n_list=list(string.ascii_uppercase)
 random.shuffle(n_list)
-zipped = dict(zip(list(range(0,26)),n_list))
-print(zipped)
+zipped = dict(zip(string.ascii_uppercase,n_list))
+rev_zipped = dict(zip(n_list,string.ascii_uppercase))
+print("rotor_3=",zipped)
+print("rev_rotor_3=",rev_zipped)
