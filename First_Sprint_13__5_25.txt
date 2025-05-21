@@ -19,7 +19,6 @@
  Metoda decryption(text: str) -> str
 
 4. Testy jednostkowe (pytest)
- Test Plugboard — czy poprawnie zamienia znaki
 
  Test Rotor — kodowanie w przód i wstecz
 
