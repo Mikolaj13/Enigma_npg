@@ -61,6 +61,7 @@ class Decrypting_Rotor_Set(Rotor_Set):
 class Enigma_Engine:
     def __init__(self,rotor_dict_list):
         self.e_rotor_set = Encrypting_Rotor_Set([Encrypting_Rotor(i) for i in rotor_dict_list])
-        self.d_rotor_set = Decrypting_Rotor_Set([Decrypting_Rotor(dict(zip(i.values,i.keys))) for i in rotor_dict_list])
+        self.d_rotor_set = Decrypting_Rotor_Set([Decrypting_Rotor(dict(zip(i.values,i.keys))) for i in reversed(rotor_dict_list)])
+
     def encryption(self, character):
         pass
