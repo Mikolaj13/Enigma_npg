@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf9d7de1-2a85-4a5f-8951-297bdc544388" name="Changes" comment="Redesign of RotorAndRotorListModule.py to take advantage of inharitence">
+    <list default="true" id="bf9d7de1-2a85-4a5f-8951-297bdc544388" name="Changes" comment="a">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdditionalModules/Extras.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdditionalModules/Extras.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdditionalModules/RotorAndRotorListModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdditionalModules/RotorAndRotorListModule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdditionalModules/test_RotorAndRotorListModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_RotorAndRotorListModule.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +37,9 @@
     &quot;accountId&quot;: &quot;dc726f00-9e5b-4d2c-8400-8a7f363b2bea&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -46,6 +51,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Extras.executor": "Run",
+    "Python.RotorAndRotorListModule.executor": "Run",
     "Python.RotorMaker.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -58,6 +65,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Tests" />
+      <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Images" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -76,7 +89,7 @@
       <updated>1746986743888</updated>
       <workItem from="1746986745149" duration="3684000" />
       <workItem from="1747415705588" duration="3229000" />
-      <workItem from="1747670549186" duration="19455000" />
+      <workItem from="1747670549186" duration="25565000" />
     </task>
     <task id="LOCAL-00001" summary="First commmit&#10;&#10;Adding the main file for this project">
       <option name="closed" value="true" />
@@ -134,7 +147,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747837235642</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Redesign of RotorAndRotorListModule.py to take advantage of inharitence">
+      <option name="closed" value="true" />
+      <created>1747859792439</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747859792439</updated>
+    </task>
+    <task id="LOCAL-00009" summary="a">
+      <option name="closed" value="true" />
+      <created>1747859873741</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747859873741</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,11 +174,13 @@
     <MESSAGE value="Adding RotorAndRotorListModule. Creating Rotor Class and methods for turning rotors." />
     <MESSAGE value="Adding RotorMaker" />
     <MESSAGE value="Adding extra data necessary for encryption" />
-    <MESSAGE value="a" />
     <MESSAGE value="Redesign of RotorAndRotorListModule.py to take advantage of inharitence" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redesign of RotorAndRotorListModule.py to take advantage of inharitence" />
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$Extras.coverage" NAME="Extras Coverage Results" MODIFIED="1747943431025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
+    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$RotorAndRotorListModule.coverage" NAME="RotorAndRotorListModule Coverage Results" MODIFIED="1747943992393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
     <SUITE FILE_PATH="coverage/Enigma_projekt_npg$RotorMaker.coverage" NAME="RotorMaker Coverage Results" MODIFIED="1747755060696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
   </component>
 </project>
