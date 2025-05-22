@@ -52,8 +52,10 @@ class Rotor_Set:
     def turn(self):
         pass
 
-    #trzeba dodać funkcjonalność
+    #dodana funkcjonalność mam na dzieję że o to chodzi 
     def setting(self,settings_list):
+        for rotor, setting in zip(self.rotor_list, settings_list):
+            rotor.setting(setting)
         pass
 
 class Encrypting_Rotor_Set(Rotor_Set):
@@ -75,6 +77,13 @@ class Enigma_Engine:
     def encryption(self, character):
         self.e_rotor_set.turn()
         return self.e_rotor_set[character]
+        
     def decryption(self, character):
         self.d_rotor_set.turn()
         return self.d_rotor_set[character]
+
+    def setting(self, settings_list):
+        self.e_rotor_set.setting(settings_list)
+        self.d_rotor_set.setting(settings_list[::-1])
+
+
