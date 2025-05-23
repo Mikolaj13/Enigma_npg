@@ -1,5 +1,5 @@
 import string
-from AdditionalModules import RotorAndRotorListModule as RARLM
+
 dictionary = dict(zip(string.ascii_uppercase,list(range(0,26))))
 rev_dictionary = dict(zip(list(range(0,26)),string.ascii_uppercase))
 SIGN_LIST = [',','.',' ','?','\'','\"',';',':','!','$','\n','1','2','3','4','5','6','7','8','9']
@@ -9,3 +9,5 @@ rotor_1= {'A': 'R', 'B': 'F', 'C': 'K', 'D': 'A', 'E': 'U', 'F': 'W', 'G': 'H', 
 rotor_2= {'A': 'F', 'B': 'G', 'C': 'Y', 'D': 'T', 'E': 'A', 'F': 'H', 'G': 'B', 'H': 'O', 'I': 'V', 'J': 'C', 'K': 'X', 'L': 'D', 'M': 'S', 'N': 'L', 'O': 'E', 'P': 'K', 'Q': 'U', 'R': 'N', 'S': 'R', 'T': 'M', 'U': 'W', 'V': 'Z', 'W': 'P', 'X': 'I', 'Y': 'Q', 'Z': 'J'}
 
 rotor_3= {'A': 'D', 'B': 'S', 'C': 'R', 'D': 'X', 'E': 'P', 'F': 'I', 'G': 'T', 'H': 'M', 'I': 'C', 'J': 'F', 'K': 'Y', 'L': 'Q', 'M': 'J', 'N': 'U', 'O': 'W', 'P': 'B', 'Q': 'H', 'R': 'K', 'S': 'O', 'T': 'A', 'U': 'E', 'V': 'L', 'W': 'V', 'X': 'G', 'Y': 'N', 'Z': 'Z'}
+rotor_list = [rotor_1,rotor_2,rotor_3]
+print(rotor_1.values)

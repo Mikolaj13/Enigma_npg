@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf9d7de1-2a85-4a5f-8951-297bdc544388" name="Changes" comment="Some modifications">
+    <list default="true" id="bf9d7de1-2a85-4a5f-8951-297bdc544388" name="Changes" comment="Adding a unit test">
+      <change afterPath="$PROJECT_DIR$/Tests/test_RotorAndRotorListModule.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdditionalModules/Extras.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdditionalModules/Extras.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdditionalModules/test_RotorAndRotorListModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_RotorAndRotorListModule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdditionalModules/RotorAndRotorListModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdditionalModules/RotorAndRotorListModule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdditionalModules/test_RotorAndRotorListModule.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,23 +50,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_RotorAndRotorListModule.TestEnigma_Engine.test_encryption.executor": "Run",
-    "Python.Extras.executor": "Run",
-    "Python.RotorAndRotorListModule.executor": "Run",
-    "Python.RotorMaker.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_RotorAndRotorListModule.TestEnigma_Engine.test_encryption.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Extras.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RotorAndRotorListModule.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RotorMaker.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Tests" />
@@ -112,7 +114,7 @@
       <updated>1746986743888</updated>
       <workItem from="1746986745149" duration="3684000" />
       <workItem from="1747415705588" duration="3229000" />
-      <workItem from="1747670549186" duration="28497000" />
+      <workItem from="1747670549186" duration="29347000" />
     </task>
     <task id="LOCAL-00001" summary="First commmit&#10;&#10;Adding the main file for this project">
       <option name="closed" value="true" />
@@ -194,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747944720862</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Adding a unit test">
+      <option name="closed" value="true" />
+      <created>1747995680968</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747995680968</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,12 +218,13 @@
     <MESSAGE value="Redesign of RotorAndRotorListModule.py to take advantage of inharitence" />
     <MESSAGE value="a" />
     <MESSAGE value="Some modifications" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some modifications" />
+    <MESSAGE value="Adding a unit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding a unit test" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Enigma_projekt_npg$Extras.coverage" NAME="Extras Coverage Results" MODIFIED="1747943431025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
     <SUITE FILE_PATH="coverage/Enigma_projekt_npg$RotorAndRotorListModule.coverage" NAME="RotorAndRotorListModule Coverage Results" MODIFIED="1747943992393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
     <SUITE FILE_PATH="coverage/Enigma_projekt_npg$RotorMaker.coverage" NAME="RotorMaker Coverage Results" MODIFIED="1747755060696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
-    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$.coverage" NAME=" Coverage Results" MODIFIED="1747995402542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
+    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$.coverage" NAME=" Coverage Results" MODIFIED="1747996250894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
   </component>
 </project>
