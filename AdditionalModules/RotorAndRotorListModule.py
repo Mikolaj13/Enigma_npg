@@ -53,10 +53,12 @@ class Rotor_Set:
     def turn(self):
         pass
 
-    #dodana funkcjonalność mam na dzieję że o to chodzi 
+    #dobra w takim razie w komętarzach dodałem propozycje  
     def setting(self,settings_list):
         '''for rotor, setting in zip(self.rotor_list, settings_list):
             rotor.setting(setting)'''
+        #for i, setting in enumerate(settings_list):
+        #   self.rotor_list[i].setting(setting)
         pass
     # nie do końca bo klasa ERS i DRS muszą mieć inny sposób na ustawienie
 
@@ -64,7 +66,7 @@ class Encrypting_Rotor_Set(Rotor_Set):
     def turn(self):
         self.rotor_list[self.index % len(self.rotor_list)].rotation()
         self.index+=1
-    def setting(self,settings_list):
+    def setting(self,settings_list):           #i to w takim razie niepotrzebne bo dziedziczy
         for i,j in enumerate(settings_list):
             self.rotor_list[i].setting(j)
 
@@ -73,9 +75,13 @@ class Decrypting_Rotor_Set(Rotor_Set):
         a = {0:2,1:1,2:0}
         self.rotor_list[a[self.index % len(self.rotor_list)]].rotation()
         self.index+=1
+        
     def setting(self,settings_list):
         for i,j in enumerate(reversed(settings_list)):
             self.rotor_list[i].setting(j)
+
+    #def def setting(self, settings_list):
+     #   super().setting(list(reversed(settings_list)))
 
 class Enigma_Engine:
     def __init__(self,rotor_dict_list):
