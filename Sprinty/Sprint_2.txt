@@ -1,0 +1,23 @@
+Cel sprintu:
+Przygotowanie podstawowego środowiska graficznego przy użyciu modułu tkinter oraz zebranie i wstępna integracja materiałów graficznych do aplikacji Enigma.
+
+1.Nauka i analiza możliwości tkinter
+Zapoznanie się z podstawowymi elementami GUI (Frame, Button, Label, Entry, Canvas, itp.)
+
+Zrozumienie obsługi zdarzeń (event handling)
+
+2.Zebranie materiałów graficznych
+Ikony przycisków (np. rotory, dźwignia startu, lampki, itp.)
+
+Tło stylizowane na starą maszynę
+
+Grafiki do celów testowych i mockupów
+
+3.Wstępny projekt GUI
+Zbudowanie szkicu głównego okna Enigmy w tkinter
+
+Pole wejściowe (Entry do tekstu)
+
+Miejsce na podgląd stanu rotorów (może na razie tekstowo)
+
+Responsywność i pierwsze layouty (np. grid, pack, place)

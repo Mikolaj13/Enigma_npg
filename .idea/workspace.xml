@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf9d7de1-2a85-4a5f-8951-297bdc544388" name="Changes" comment="Adding a unit test">
-      <change afterPath="$PROJECT_DIR$/Tests/test_RotorAndRotorListModule.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprinty/Protocol_Sprint_1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprinty/Sprint_2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdditionalModules/Extras.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdditionalModules/Extras.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdditionalModules/RotorAndRotorListModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdditionalModules/RotorAndRotorListModule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdditionalModules/test_RotorAndRotorListModule.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/First_Sprint_13__5_25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Sprinty/Sprint_1.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +68,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Sprinty" />
       <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Tests" />
       <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Images" />
     </key>
@@ -114,7 +114,9 @@
       <updated>1746986743888</updated>
       <workItem from="1746986745149" duration="3684000" />
       <workItem from="1747415705588" duration="3229000" />
-      <workItem from="1747670549186" duration="29347000" />
+      <workItem from="1747670549186" duration="30951000" />
+      <workItem from="1748262385822" duration="464000" />
+      <workItem from="1748288428309" duration="1630000" />
     </task>
     <task id="LOCAL-00001" summary="First commmit&#10;&#10;Adding the main file for this project">
       <option name="closed" value="true" />
@@ -204,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747995680968</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Adding a unit test">
+      <option name="closed" value="true" />
+      <created>1747996294104</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1747996294104</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

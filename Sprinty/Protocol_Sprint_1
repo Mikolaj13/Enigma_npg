@@ -1,0 +1,38 @@
+Projekt: Symulacja maszyny Enigma w Pythonie
+Zespół: [tu wpisz imiona członków zespołu]
+Sprint: 1
+Czas trwania sprintu: 14-20.05.2025
+Scrum Master: Mikołaj Dworak
+
+Cel sprintu:
+Stworzenie głównego silnika szyfrującego maszyny Enigma, obejmującego klasy i metody do kodowania i dekodowania wiadomości.
+
+Zrealizowane zadania:
+1. Klasa Rotor
+Inicjalizacja z mapowaniem znaków
+
+Implementacja mechanizmu obrotu
+
+Nadpisanie operatorów klasy (__getitem__)
+
+2. Klasa RotorSet
+Obsługa wielu rotorów jako zestawu
+
+Logika rotacji całego zestawu
+
+Nadpisanie operatorów do obsługi sygnału wyjściowego
+
+3. Metody szyfrujące
+encryption(text: str) -> str
+
+decryption(text: str) -> str
+
+4. Test całościowy
+
+Test całościowy (EnigmaMachine) – sprawdzenie poprawności szyfrowania i odszyfrowywania
+
+Wyniki testów:
+
+Test zakończony sukcesem
+
+Szyfrowanie i deszyfrowanie działa zgodnie z oczekiwaniem
