@@ -14,7 +14,6 @@ class Rotor:
     def setting(self,s):
         pass
 
-
 class Encrypting_Rotor(Rotor):
     def rotation(self):
         keys = list(self.rotor_dictionary.keys())
@@ -37,8 +36,6 @@ class Decrypting_Rotor(Rotor):
     def setting(self,setting):
         for i in range(0, setting):
             self.rotation()
-#klasa rotor i klasy dziedziczące działają
-
 
 class Rotor_Set:
     def __init__(self, rotor_list, index=0):
@@ -53,21 +50,16 @@ class Rotor_Set:
     def turn(self):
         pass
 
-    #dobra w takim razie w komętarzach dodałem propozycje  
-    def setting(self,settings_list):
-        '''for rotor, setting in zip(self.rotor_list, settings_list):
-            rotor.setting(setting)'''
-        #for i, setting in enumerate(settings_list):
-        #   self.rotor_list[i].setting(setting)
+    def setting(self,setting_list):
         pass
-    # nie do końca bo klasa ERS i DRS muszą mieć inny sposób na ustawienie
+
 
 class Encrypting_Rotor_Set(Rotor_Set):
     def turn(self):
         self.rotor_list[self.index % len(self.rotor_list)].rotation()
         self.index+=1
-    def setting(self,settings_list):           #i to w takim razie niepotrzebne bo dziedziczy
-        for i,j in enumerate(settings_list):
+    def setting(self,setting_list):
+        for i,j in enumerate(setting_list):
             self.rotor_list[i].setting(j)
 
 class Decrypting_Rotor_Set(Rotor_Set):
@@ -76,12 +68,9 @@ class Decrypting_Rotor_Set(Rotor_Set):
         self.rotor_list[a[self.index % len(self.rotor_list)]].rotation()
         self.index+=1
         
-    def setting(self,settings_list):
-        for i,j in enumerate(reversed(settings_list)):
+    def setting(self,setting_list):
+        for i,j in enumerate(reversed(setting_list)):
             self.rotor_list[i].setting(j)
-
-    #def def setting(self, settings_list):
-     #   super().setting(list(reversed(settings_list)))
 
 class Enigma_Engine:
     def __init__(self,rotor_dict_list):
@@ -96,8 +85,8 @@ class Enigma_Engine:
         self.d_rotor_set.turn()
         return self.d_rotor_set[character]
 
-    def setting(self, settings_list):
-        self.e_rotor_set.setting(settings_list)
-        self.d_rotor_set.setting(settings_list)
+    def setting(self, setting_list):
+        self.e_rotor_set.setting(setting_list)
+        self.d_rotor_set.setting(setting_list)
 
 
