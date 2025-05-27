@@ -1,3 +1,9 @@
+Projekt: Symulacja maszyny Enigma w Pythonie
+Zespół: Mikołaj Dworak, Dawid Giełdoń, Piotr Ficek, Ludwik Fonfara
+Sprint: 2
+Czas trwania sprintu: 21-27.05.2025
+Scrum Master: Dawid Giełdoń
+
 Cel sprintu:
 Przygotowanie podstawowego środowiska graficznego przy użyciu modułu tkinter oraz zebranie i wstępna integracja materiałów graficznych do aplikacji Enigma.
 
