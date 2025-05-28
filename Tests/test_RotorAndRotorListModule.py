@@ -18,3 +18,4 @@ class TestEnigma_Engine(TestCase):
         print(b)
         if test_text != b:
             self.fail("Test")
+# test działania silnika

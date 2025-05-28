@@ -16,7 +16,7 @@ class EnigmaApp(Tk):
         self.entry_output = Widgets.TextMaker(4, self, "Output")
 
     def on_click(self):
-        self.label.config(text="Kliknięto przycisk!")
+        pass
 
 # Uruchomienie aplikacji
 if __name__ == "__main__":

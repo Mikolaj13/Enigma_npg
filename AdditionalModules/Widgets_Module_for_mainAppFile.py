@@ -12,3 +12,7 @@ class TextMaker():
         scroll.grid(row=row+1, column=25, sticky="ns")
 
         self.text.config(state=DISABLED)
+    def typing(self,char):
+        self.text.config(state = NORMAL)
+        self.text.insert(END,char)
+        self.text.config(state= DISABLED)
