@@ -1,9 +1,8 @@
 class Rotor:
-    def __init__(self,rotor_dictionary,current_setting=0):
+    def __init__(self,rotor_dictionary):
         self.rotor_dictionary = rotor_dictionary
         self.rotor_dictionary_copy = rotor_dictionary.copy()
         #na wypadek jakbyśmy chcieli zrobić funkcję resetu
-        self.current_setting = current_setting
 
     def __getitem__(self, key):
         return self.rotor_dictionary[key]
@@ -11,6 +10,9 @@ class Rotor:
     def rotation(self):
         pass
     # wirtualna metoda do rotacji rotora
+    def backspace(self):
+        pass
+
     def setting(self,s):
         pass
     #wirtualna metoda do ustawiania rotora
@@ -19,10 +21,13 @@ class Encrypting_Rotor(Rotor):
     def rotation(self):
         keys = list(self.rotor_dictionary.keys())
         values = list(self.rotor_dictionary.values())
-        self.current_setting += 1
-        self.current_setting %= 26
         self.rotor_dictionary=dict(zip(keys, values[1:]+[values[0]]))
     #nadpisanie metody wirtualnej w klasie dziedziczącej( rozkładamy słownik na klucze i wartości, przerzucamy pierwszą wartość na koniec i składamy z powrotem)
+    def backspace(self):
+        keys = list(self.rotor_dictionary.keys())
+        values = list(self.rotor_dictionary.values())
+        self.rotor_dictionary = dict(zip(keys, [values[-1]] + values[:-1]))
+
     def setting(self,setting):
         for i in range(0,setting):
             self.rotation()
@@ -32,10 +37,11 @@ class Decrypting_Rotor(Rotor):
     def rotation(self):
         keys = list(self.rotor_dictionary.keys())
         values = list(self.rotor_dictionary.values())
-        self.current_setting += 1
-        self.current_setting %= 26
         self.rotor_dictionary = dict(zip(keys[1:] + [keys[0]], values))
-
+    def backspace(self):
+        keys = list(self.rotor_dictionary.keys())
+        values = list(self.rotor_dictionary.values())
+        self.rotor_dictionary = dict(zip( [keys[-1]] + keys[:-1],values))
     # nadpisanie metody wirtualnej w klasie dziedziczącej( rozkładamy słownik na klucze i wartości, przerzucamy ostatni klucz na początek i składamy z powrotem)
     def setting(self,setting):
         for i in range(0, setting):
@@ -54,6 +60,8 @@ class Rotor_Set:
     # __getitem__ nadpisuje operator [] klasy
     def turn(self):
         pass
+    def backspace(self):
+        pass
     # wirtualna metoda do pełnej tury całego zestawu
     def setting(self,setting_list):
         pass
@@ -64,6 +72,11 @@ class Encrypting_Rotor_Set(Rotor_Set):
         self.rotor_list[self.index % len(self.rotor_list)].rotation()
         self.index+=1
     # nadpisanie metody wirtualnej w klasie dziedziczącej(obracamy tylko ten rotor, który jest na pozycji reszty z dzielenia indexu przez ilość rotorów w zestawie)
+
+    def backspace(self):
+        self.index -= 1
+        self.rotor_list[self.index % len(self.rotor_list)].backspace()
+
     def setting(self,setting_list):
         for i,j in enumerate(setting_list):
             self.rotor_list[i].setting(j)
@@ -74,10 +87,18 @@ class Decrypting_Rotor_Set(Rotor_Set):
         self.rotor_list[a[self.index % len(self.rotor_list)]].rotation()
         self.index+=1
     # nadpisanie metody wirtualnej w klasie dziedziczącej(obracamy tylko ten rotor, który jest na pozycji reszty z dzielenia indexu przez ilość rotorów w zestawie)
+
+    def backspace(self):
+        a = {0:2,1:1,2:0}
+        self.index -= 1
+        self.rotor_list[a[self.index % len(self.rotor_list)]].backspace()
+
     def setting(self,setting_list):
         for i,j in enumerate(reversed(setting_list)):
             self.rotor_list[i].setting(j)
     # wirtualna metoda do ustawiania całego zestawu
+
+
 class Enigma_Engine:
     def __init__(self,rotor_dict_list):
         self.e_rotor_set = Encrypting_Rotor_Set([Encrypting_Rotor(i) for i in rotor_dict_list])
@@ -85,12 +106,16 @@ class Enigma_Engine:
 
     def encryption(self, character):
         self.e_rotor_set.turn()
+        self.d_rotor_set.turn()
         return self.e_rotor_set[character]
         
     def decryption(self, character):
         self.d_rotor_set.turn()
+        self.e_rotor_set.turn()
         return self.d_rotor_set[character]
-
+    def backspace(self):
+        self.e_rotor_set.backspace()
+        self.d_rotor_set.backspace()
     def setting(self, setting_list):
         self.e_rotor_set.setting(setting_list)
         self.d_rotor_set.setting(setting_list)

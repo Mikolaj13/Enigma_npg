@@ -8,9 +8,9 @@ class ButtonIOMaker():
         self.button.grid(row=row, column=col, rowspan=3)
         self.button.config(state=DISABLED)
 
-        def clicked(self):
-            self.button.config(bg="green")
-            self.window.after(200, lambda: self.button.config(bg="light grey"))
+    def clicked(self):
+        self.button.config(bg="green")
+        self.window.after(200, lambda: self.button.config(bg="light grey"))
 
 class TextMaker():
     def __init__(self, row, window, text):
@@ -24,7 +24,13 @@ class TextMaker():
         scroll.grid(row=row+1, column=25, sticky="ns")
 
         self.text.config(state=DISABLED)
+
     def typing(self,char):
         self.text.config(state = NORMAL)
         self.text.insert(END,char)
         self.text.config(state= DISABLED)
+
+    def backspace(self):
+        self.text.config(state=NORMAL)
+        self.text.delete("end-2c", "end-1c")
+        self.text.config(state=DISABLED)
