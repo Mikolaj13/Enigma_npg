@@ -1,5 +1,17 @@
 from tkinter import *
 
+class ButtonIOMaker():
+    def __init__(self, row, col, text, window):
+        self.window = window
+
+        self.button = Button(window,width=2, height=4 , text=text, bg="light grey")
+        self.button.grid(row=row, column=col, rowspan=3)
+        self.button.config(state=DISABLED)
+
+        def clicked(self):
+            self.button.config(bg="green")
+            self.window.after(200, lambda: self.button.config(bg="light grey"))
+
 class TextMaker():
     def __init__(self, row, window, text):
         Label(window, text= text).grid(row=row,columnspan=2)
