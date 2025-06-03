@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf9d7de1-2a85-4a5f-8951-297bdc544388" name="Changes" comment="Adding a unit test">
-      <change afterPath="$PROJECT_DIR$/Sprinty/Protocol_Sprint_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sprinty/Sprint_2.txt" afterDir="false" />
+    <list default="true" id="bf9d7de1-2a85-4a5f-8951-297bdc544388" name="Changes" comment="Zmiana layoutu i kilka poprawek">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/First_Sprint_13__5_25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Sprinty/Sprint_1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdditionalModules/Extras.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdditionalModules/Extras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdditionalModules/Widgets_Module_for_mainAppFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdditionalModules/Widgets_Module_for_mainAppFile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainAppFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainAppFile.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -55,9 +61,10 @@
     &quot;Python.Extras.executor&quot;: &quot;Run&quot;,
     &quot;Python.RotorAndRotorListModule.executor&quot;: &quot;Run&quot;,
     &quot;Python.RotorMaker.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mainAppFile.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Main-Coding-Window-Branch&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -73,7 +80,30 @@
       <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Images" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.mainAppFile">
+    <configuration name="mainAppFile" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Enigma_projekt_npg" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mainAppFile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_RotorAndRotorListModule.TestEnigma_Engine.test_encryption" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Enigma_projekt_npg" />
       <option name="ENV_FILES" value="" />
@@ -92,6 +122,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mainAppFile" />
         <item itemvalue="Python tests.Python tests for test_RotorAndRotorListModule.TestEnigma_Engine.test_encryption" />
       </list>
     </recent_temporary>
@@ -116,7 +147,7 @@
       <workItem from="1747415705588" duration="3229000" />
       <workItem from="1747670549186" duration="30951000" />
       <workItem from="1748262385822" duration="464000" />
-      <workItem from="1748288428309" duration="1630000" />
+      <workItem from="1748288428309" duration="42057000" />
     </task>
     <task id="LOCAL-00001" summary="First commmit&#10;&#10;Adding the main file for this project">
       <option name="closed" value="true" />
@@ -214,11 +245,70 @@
       <option name="project" value="LOCAL" />
       <updated>1747996294104</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Archiwizacja planów i protokołów">
+      <option name="closed" value="true" />
+      <created>1748290157988</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1748290157988</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Dodanie klas związanych z obsługą gui">
+      <option name="closed" value="true" />
+      <created>1748295169682</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1748295169682</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Dodanie opisów i metody do dodawania znaków do pól tekstowych">
+      <option name="closed" value="true" />
+      <created>1748445264285</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1748445264285</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Dodałem klasę &quot;światełek&quot;">
+      <option name="closed" value="true" />
+      <created>1748534824758</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1748534824758</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Dodałem &quot;światełka&quot; na głównym oknie aplikacji. Dodałem funkcję backspace, która pozwala na cofanie tekstu.">
+      <option name="closed" value="true" />
+      <created>1748541908537</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1748541908539</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Zmiana layoutu i kilka poprawek">
+      <option name="closed" value="true" />
+      <created>1748605657805</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1748605657805</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commmit&#10;&#10;Adding the main file for this project" />
@@ -229,9 +319,16 @@
     <MESSAGE value="a" />
     <MESSAGE value="Some modifications" />
     <MESSAGE value="Adding a unit test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding a unit test" />
+    <MESSAGE value="Archiwizacja planów i protokołów" />
+    <MESSAGE value="Dodanie klas związanych z obsługą gui" />
+    <MESSAGE value="Dodanie opisów i metody do dodawania znaków do pól tekstowych" />
+    <MESSAGE value="Dodałem klasę &quot;światełek&quot;" />
+    <MESSAGE value="Dodałem &quot;światełka&quot; na głównym oknie aplikacji. Dodałem funkcję backspace, która pozwala na cofanie tekstu." />
+    <MESSAGE value="Zmiana layoutu i kilka poprawek" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zmiana layoutu i kilka poprawek" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$mainAppFile.coverage" NAME="mainAppFile Coverage Results" MODIFIED="1748813376630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Enigma_projekt_npg$Extras.coverage" NAME="Extras Coverage Results" MODIFIED="1747943431025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
     <SUITE FILE_PATH="coverage/Enigma_projekt_npg$RotorAndRotorListModule.coverage" NAME="RotorAndRotorListModule Coverage Results" MODIFIED="1747943992393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
     <SUITE FILE_PATH="coverage/Enigma_projekt_npg$RotorMaker.coverage" NAME="RotorMaker Coverage Results" MODIFIED="1747755060696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
