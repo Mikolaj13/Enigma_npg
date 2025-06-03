@@ -11,3 +11,20 @@ class SettingApp(Tk):
         Button(text="subtract a rotor", width=12, height=2, command=lambda: self.widget_list.sub()).grid(column=4, row=1)
         Button(text="reset", width=12, height=2, command=lambda: self.widget_list.reset()).grid(column=5, row=0)
         Button(text="continue", width=12, height=2, command=lambda: self.cont()).grid(column=5, row=1)
+
+
+
+    def cont(self):
+            self.destroy()
+
+
+class WidgetSettingPack:
+    def __init__(self,window,row,col):
+        self.setting = 0
+
+        self.plus_button = Button(window,text="+",width=4,height=2,command=lambda: self.plus())
+        self.plus_button.grid(row=row,column=col+2)
+        self.minus_button = Button(window,text="-",width=4,height=2, command=lambda: self.minus())
+        self.minus_button.grid(row=row, column=col)
+        self.text_field = Label(window,text="0",width=4,height=2)
+        self.text_field.grid(row=row,column=col+1)
