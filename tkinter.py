@@ -48,3 +48,27 @@ class WidgetSettingPack:
         self.text_field.destroy()
     def get(self):
         return self.setting
+
+class WidgetSettingPackList:
+    def __init__(self,window):
+        self.widget_list = []
+        self.window = window
+        for i in range(2):
+            self.widget_list.append(WidgetSettingPack(self.window,i,0))
+    def reset(self):
+        for i in self.widget_list:
+            i.reset()
+    def add(self):
+        if len(self.widget_list)<5:
+            self.widget_list.append(WidgetSettingPack(self.window,len(self.widget_list),0))
+    def sub(self):
+        if len(self.widget_list)>2:
+            self.widget_list[-1].death()
+            self.widget_list.pop()
+    def get(self):
+        return [i.get() for i in self.widget_list]
+if _name_ == "_main_":
+    app = SettingApp()
+
+    app.mainloop()
+    print(app.widget_list.get())
