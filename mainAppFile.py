@@ -1,18 +1,16 @@
 from tkinter import *
 from tkinter import filedialog
-
 from AdditionalModules.RotorAndRotorListModule import Enigma_Engine
 from AdditionalModules import Extras
-
 from AdditionalModules import Widgets_Module_for_mainAppFile as Widgets
 import string
 
 is_it_encryption_or_decryption=False
 class EnigmaApp(Tk):
-    def __init__(self,setting_list):
+    def __init__(self,setting_list,plug_board):
         super().__init__()
 
-        self.enigma_engine = Enigma_Engine(Extras.rotor_list)
+        self.enigma_engine = Enigma_Engine(Extras.rotor_list[:len(setting_list)],plug_board)
         self.enigma_engine.setting(setting_list)
 
         self.title("Enigma")
@@ -32,7 +30,7 @@ class EnigmaApp(Tk):
         self.list_of_input_buttons = list()
 
         #rozmieszczanie światełek
-        for i, j in enumerate(string.ascii_uppercase):
+        for i, j in enumerate(Extras.ORIGINAL_LETTERS):
             if i < 20:
                 self.list_of_output_buttons.append(Widgets.ButtonIOMaker((i//10),i%10,j,self,"white"))
                 self.list_of_input_buttons.append(Widgets.ButtonIOMaker((i // 10)+5, i % 10, j, self,"grey"))
@@ -68,8 +66,8 @@ class EnigmaApp(Tk):
 
             self.IO_text_fields.typing(character,character_after)
 
-            self.list_of_input_buttons[string.ascii_uppercase.index(character)].clicked()
-            self.list_of_output_buttons[string.ascii_uppercase.index(character_after)].clicked()
+            self.list_of_input_buttons[Extras.ORIGINAL_LETTERS.index(character)].clicked()
+            self.list_of_output_buttons[Extras.ORIGINAL_LETTERS.index(character_after)].clicked()
 
 
     # metoda do ładowania plików
@@ -115,8 +113,4 @@ class EnigmaApp(Tk):
             print(f"Zapisano do: {filepath}")
 
         self.destroy()
-# Uruchomienie aplikacji
-if __name__ == "__main__":
-    app = EnigmaApp([0,0,0])
-    app.bind("<KeyPress>", app.on_key_press)
-    app.mainloop()
+
