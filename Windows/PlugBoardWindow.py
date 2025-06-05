@@ -1,8 +1,6 @@
 from tkinter import *
 from string import ascii_uppercase
 
-
-
 buttons = []
 selected_buttons = []
 class PlugBoardWindow(Tk):
@@ -15,7 +13,7 @@ class PlugBoardWindow(Tk):
             buttons.append(PlugBoardButtonMaker(self,index,  letter))
 
     # Przycisk RESET
-        self.reset_btn = Button(self,height = 2, width=8, text="Reset", command=lambda: self.reset_buttons)
+        self.reset_btn = Button(self,height = 2, width=8, text="Reset", command=lambda: self.reset_buttons())
         self.reset_btn.grid(row=4, column=10, columnspan=4)
 
         self.continue_btn = Button(self,text="Continue",height = 2, width=8,command=lambda : self.continue_button())
@@ -67,7 +65,4 @@ class PlugBoardButtonMaker:
             buttons[i2].current_text = txt1
             selected_buttons.clear()
 
-if __name__ == "__main__":
-    app = PlugBoardWindow()
-    app.mainloop()
-    print(app.get_plugboard())
+

@@ -120,5 +120,3 @@ class Enigma_Engine:
     def setting(self, setting_list):
         self.e_rotor_set.setting(setting_list)
         self.d_rotor_set.setting(setting_list)
-
-

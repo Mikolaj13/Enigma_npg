@@ -3,19 +3,20 @@ from tkinter import *
 class SettingApp(Tk):
     def __init__(self):
         super().__init__()
-        self.title("Enigma Rotor Settings")
+        self.title("Settings")
 
         self.rotor_count = 3
         self.widget_list = WidgetSettingPackList(self)
-        Button(text = "add a rotor",width=12,height=2,command=lambda: self.widget_list.add()).grid(column=4, row=0)
-        Button(text="subtract a rotor", width=12, height=2, command=lambda: self.widget_list.sub()).grid(column=4, row=1)
-        Button(text="reset", width=12, height=2, command=lambda: self.widget_list.reset()).grid(column=5, row=0)
-        Button(text="continue", width=12, height=2, command=lambda: self.cont()).grid(column=5, row=1)
+        Button(text = "Add a rotor",width=12,height=2,command=lambda: self.widget_list.add()).grid(column=4, row=0)
+        Button(text="Subtract a rotor", width=12, height=2, command=lambda: self.widget_list.sub()).grid(column=4, row=1)
+        Button(text="Reset", width=12, height=2, command=lambda: self.widget_list.reset()).grid(column=5, row=0)
+        Button(text="Continue", width=12, height=2, command=lambda: self.cont()).grid(column=5, row=1)
 
 
-
+    def get_settings(self):
+        return self.widget_list.get()
     def cont(self):
-            self.destroy()
+        self.destroy()
 
 
 class WidgetSettingPack:
@@ -29,7 +30,7 @@ class WidgetSettingPack:
         self.text_field = Label(window,text="0",width=4,height=2)
         self.text_field.grid(row=row,column=col+1)
 
-  def update(self):
+    def update(self):
         self.text_field.config(text=str(self.setting))
     def plus(self):
         if self.setting<25:
@@ -67,8 +68,4 @@ class WidgetSettingPackList:
             self.widget_list.pop()
     def get(self):
         return [i.get() for i in self.widget_list]
-if _name_ == "_main_":
-    app = SettingApp()
 
-    app.mainloop()
-    print(app.widget_list.get())

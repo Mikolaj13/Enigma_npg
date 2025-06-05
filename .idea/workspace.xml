@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf9d7de1-2a85-4a5f-8951-297bdc544388" name="Changes" comment="Zmiana layoutu i kilka poprawek">
+    <list default="true" id="bf9d7de1-2a85-4a5f-8951-297bdc544388" name="Changes" comment="Zmiana layoutu, dodanie przycisków Load, Save and Close i Close razem z odpowiadającymi metodami, kilka poprawek">
+      <change afterPath="$PROJECT_DIR$/Enigma.pyw" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdditionalModules/Extras.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdditionalModules/Extras.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdditionalModules/Widgets_Module_for_mainAppFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdditionalModules/Widgets_Module_for_mainAppFile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainAppFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainAppFile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdditionalModules/RotorAndRotorListModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdditionalModules/RotorAndRotorListModule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdditionalModules/Widgets_Module_for_mainAppFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdditionalModules/Widgets_Module_for_MainWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlugBoardWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/PlugBoardWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SettingsWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/SettingsWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainAppFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/MainWindow.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +27,22 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Main-Coding-Window-Branch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,33 +72,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for test_RotorAndRotorListModule.TestEnigma_Engine.test_encryption.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Extras.executor&quot;: &quot;Run&quot;,
-    &quot;Python.RotorAndRotorListModule.executor&quot;: &quot;Run&quot;,
-    &quot;Python.RotorMaker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mainAppFile.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Main-Coding-Window-Branch&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_RotorAndRotorListModule.TestEnigma_Engine.test_encryption.executor": "Run",
+    "Python.Enigma.executor": "Run",
+    "Python.Enigma.pyw.executor": "Run",
+    "Python.Extras.executor": "Run",
+    "Python.MainWindow.executor": "Run",
+    "Python.PlugBoardWindow.executor": "Run",
+    "Python.RotorAndRotorListModule.executor": "Run",
+    "Python.RotorMaker.executor": "Run",
+    "Python.mainAppFile.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Windows" />
       <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Sprinty" />
       <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Tests" />
       <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Images" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.mainAppFile">
-    <configuration name="mainAppFile" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="MainWindow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Enigma_projekt_npg" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,7 +117,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mainAppFile.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Windows\MainWindow.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -122,6 +144,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MainWindow" />
+        <item itemvalue="Python tests.Python tests for test_RotorAndRotorListModule.TestEnigma_Engine.test_encryption" />
         <item itemvalue="Python.mainAppFile" />
         <item itemvalue="Python tests.Python tests for test_RotorAndRotorListModule.TestEnigma_Engine.test_encryption" />
       </list>
@@ -147,7 +171,8 @@
       <workItem from="1747415705588" duration="3229000" />
       <workItem from="1747670549186" duration="30951000" />
       <workItem from="1748262385822" duration="464000" />
-      <workItem from="1748288428309" duration="42057000" />
+      <workItem from="1748288428309" duration="54095000" />
+      <workItem from="1749023227375" duration="10550000" />
     </task>
     <task id="LOCAL-00001" summary="First commmit&#10;&#10;Adding the main file for this project">
       <option name="closed" value="true" />
@@ -293,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748605657805</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Zmiana layoutu, dodanie przycisków Load, Save and Close i Close razem z odpowiadającymi metodami, kilka poprawek">
+      <option name="closed" value="true" />
+      <created>1748857034691</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1748857034691</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,13 +358,18 @@
     <MESSAGE value="Dodałem klasę &quot;światełek&quot;" />
     <MESSAGE value="Dodałem &quot;światełka&quot; na głównym oknie aplikacji. Dodałem funkcję backspace, która pozwala na cofanie tekstu." />
     <MESSAGE value="Zmiana layoutu i kilka poprawek" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zmiana layoutu i kilka poprawek" />
+    <MESSAGE value="Zmiana layoutu, dodanie przycisków Load, Save and Close i Close razem z odpowiadającymi metodami, kilka poprawek" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zmiana layoutu, dodanie przycisków Load, Save and Close i Close razem z odpowiadającymi metodami, kilka poprawek" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$mainAppFile.coverage" NAME="mainAppFile Coverage Results" MODIFIED="1748813376630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$Extras.coverage" NAME="Extras Coverage Results" MODIFIED="1747943431025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
+    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$mainAppFile.coverage" NAME="mainAppFile Coverage Results" MODIFIED="1748952080595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Enigma_projekt_npg$RotorAndRotorListModule.coverage" NAME="RotorAndRotorListModule Coverage Results" MODIFIED="1747943992393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
-    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$RotorMaker.coverage" NAME="RotorMaker Coverage Results" MODIFIED="1747755060696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
+    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$Extras.coverage" NAME="Extras Coverage Results" MODIFIED="1749047502679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
+    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$MainWindow.coverage" NAME="MainWindow Coverage Results" MODIFIED="1749047169400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
+    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$PlugBoardWindow.coverage" NAME="PlugBoardWindow Coverage Results" MODIFIED="1749053744008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
+    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$Enigma_pyw.coverage" NAME="Enigma.pyw Coverage Results" MODIFIED="1749056805044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$Enigma.coverage" NAME="Enigma Coverage Results" MODIFIED="1749047852089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$RotorMaker.coverage" NAME="RotorMaker Coverage Results" MODIFIED="1748858098623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
     <SUITE FILE_PATH="coverage/Enigma_projekt_npg$.coverage" NAME=" Coverage Results" MODIFIED="1747996250894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
   </component>
 </project>

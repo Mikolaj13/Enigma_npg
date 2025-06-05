@@ -2,10 +2,10 @@ from tkinter import *
 from tkinter import filedialog
 from AdditionalModules.RotorAndRotorListModule import Enigma_Engine
 from AdditionalModules import Extras
-from AdditionalModules import Widgets_Module_for_mainAppFile as Widgets
+from AdditionalModules import Widgets_Module_for_MainWindow as Widgets
 import string
 
-is_it_encryption_or_decryption=False
+is_it_encryption_or_decryption=True
 class EnigmaApp(Tk):
     def __init__(self,setting_list,plug_board):
         super().__init__()
@@ -16,7 +16,6 @@ class EnigmaApp(Tk):
         self.title("Enigma")
         #pola tekstowe
         self.IO_text_fields = Widgets.TextIOPair(10,self)
-
         Label().grid(row=4, column=0) # wypełnienie między klawiaturami
 
         # przyciski funkcyjne
@@ -24,7 +23,7 @@ class EnigmaApp(Tk):
         Button(self, text="Save and close", width=15, height=2, command=lambda: self.save_and_close()).grid(row=0, column=16, columnspan=3)
         Button(self, text="Close", width=15, height=2, command=lambda: self.destroy()).grid(row=0,column=19,columnspan=3)
         #
-        Label(self, text=Extras.opis,font=("Times New Roman", 12)).grid(row=1, column=13, columnspan=9, rowspan=7)
+        Label(self, text=Extras.opis).grid(row=1, column=13, columnspan=12, rowspan=7)
         #listy "światełek"
         self.list_of_output_buttons = list()
         self.list_of_input_buttons = list()

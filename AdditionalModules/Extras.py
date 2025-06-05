@@ -20,10 +20,15 @@ rotor_5= {'A': 'C', 'B': 'N', 'C': 'V', 'D': 'R', 'E': 'K', 'F': 'B', 'G': 'W', 
 
 rotor_list = [rotor_1,rotor_2,rotor_3,rotor_4,rotor_5]
 
-opis = ("Aplikacja Enigma umożliwia szyfrowanie tekstu \n "
-        "poprzez wpisywanie liter z klawiatury \n"
-        " – każda litera jest od razu przekształcana \n "
-        " na szyfr. Klawisz Backspace usuwa ostatnio \n"
-        " wpisaną literę.Za pomocą przycisku Load  \n "
-        "można wczytać plik z tekstem do odszyfrowania.\n"
-        " Gotowy szyfr można zapisać klikając Save and Close.")
+opis = ("Maszyna szyfrująca Enigma była elektromechanicznym \n"
+        "urządzeniem używanym do szyfrowania i deszyfrowania\n"
+        " wiadomości, głównie przez Niemców w czasie \n"
+        "II wojny światowej. Działała na zasadzie zestawu \n"
+        "rotorów, które przy każdym naciśnięciu klawisza \n"
+        "zmieniały swoje położenie, tworząc skomplikowany. \n"
+        "Każda litera była szyfrowana w inny sposób zależnie\n"
+        " od pozycji rotorów, co czyniło kod trudnym do \n"
+        "złamania bez znajomości ustawień. Dodatkową warstwę\n"
+        " bezpieczeństwa zapewniała tzw. tablica podstawień \n"
+        "(plug board), która wymieniała litery parami przed \n"
+        "i po przejściu przez rotory.")
