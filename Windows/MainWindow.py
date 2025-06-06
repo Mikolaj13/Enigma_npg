@@ -5,11 +5,11 @@ from AdditionalModules import Extras
 from AdditionalModules import Widgets_Module_for_MainWindow as Widgets
 import string
 
-is_it_encryption_or_decryption=True
-class EnigmaApp(Tk):
-    def __init__(self,setting_list,plug_board):
-        super().__init__()
 
+class EnigmaApp(Tk):
+    def __init__(self,setting_list,plug_board,is_it_encryption_or_decryption=True):
+        super().__init__()
+        self.is_it_encryption_or_decryption = is_it_encryption_or_decryption
         self.enigma_engine = Enigma_Engine(Extras.rotor_list[:len(setting_list)],plug_board)
         self.enigma_engine.setting(setting_list)
 
@@ -58,7 +58,7 @@ class EnigmaApp(Tk):
         #sprawdzamy czy znak jest literą
         elif character in string.ascii_uppercase:
 
-            if is_it_encryption_or_decryption:
+            if self.is_it_encryption_or_decryption:
                 character_after = self.enigma_engine.encryption(character)
             else:
                 character_after = self.enigma_engine.decryption(character)
@@ -88,7 +88,7 @@ class EnigmaApp(Tk):
 
                     if character in string.ascii_uppercase:
 
-                        if is_it_encryption_or_decryption:
+                        if self.is_it_encryption_or_decryption:
                             character_after = self.enigma_engine.encryption(character)
                         else:
                             character_after = self.enigma_engine.decryption(character)

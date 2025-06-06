@@ -1,6 +1,6 @@
 from tkinter import *
-#Zarys kalsy setting
-class SettingApp(Tk):
+
+class SettingWindow(Tk):
     def __init__(self):
         super().__init__()
         self.title("Settings")
