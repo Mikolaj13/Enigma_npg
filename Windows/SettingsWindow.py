@@ -4,6 +4,8 @@ class SettingWindow(Tk):
     def __init__(self):
         super().__init__()
         self.title("Settings")
+        ico_path = os.path.join("..", "images", "favicon.ico")
+        self.iconbitmap(ico_path)
 
         self.rotor_count = 3
         self.widget_list = WidgetSettingPackList(self)
