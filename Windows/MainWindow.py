@@ -14,6 +14,8 @@ class EnigmaApp(Tk):
         self.enigma_engine.setting(setting_list)
 
         self.title("Enigma")
+        ico_path = os.path.join("..", "images", "favicon.ico")
+        self.iconbitmap(ico_path)
         #pola tekstowe
         self.IO_text_fields = Widgets.TextIOPair(10,self)
         Label().grid(row=4, column=0) # wypełnienie między klawiaturami
