@@ -7,6 +7,8 @@ class PlugBoardWindow(Tk):
     def __init__(self):
         super().__init__()
         self.title("Plug Board")
+        ico_path = os.path.join("..", "images", "favicon.ico")
+        self.iconbitmap(ico_path)
 
     # Przyciski do liter
         for index, letter in enumerate(ascii_uppercase):
