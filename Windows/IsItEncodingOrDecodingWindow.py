@@ -1,10 +1,11 @@
+import os
 from tkinter import *
 
 class IsItEncodingOrDecodingWindow(Tk):
     def __init__(self):
         super().__init__()
         self.title("Enigma Rotor Settings")
-        ico_path = os.path.join("..", "images", "favicon.ico")
+        ico_path = os.path.join( "Images", "favicon.ico")
         self.iconbitmap(ico_path)
         self.is_it_encoding_or_decoding = True
         Button(text="Encoding",width=12,height=2,command=lambda : self.encoding()).grid(column=0, row=0)

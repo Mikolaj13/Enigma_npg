@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf9d7de1-2a85-4a5f-8951-297bdc544388" name="Changes" comment="Połączenie okien i kilka poprawek">
+    <list default="true" id="bf9d7de1-2a85-4a5f-8951-297bdc544388" name="Changes" comment="Dołączenie okna wyboru enkrypcji/dekrypcji do Enigma.pyw">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enigma.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/Enigma.pyw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsItEncodingOrDecodingWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/IsItEncodingOrDecodingWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdditionalModules/Widgets_Module_for_MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdditionalModules/Widgets_Module_for_MainWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Windows/IsItEncodingOrDecodingWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/IsItEncodingOrDecodingWindow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Windows/MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/MainWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Windows/PlugBoardWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/PlugBoardWindow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Windows/SettingsWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/SettingsWindow.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,34 +70,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_RotorAndRotorListModule.TestEnigma_Engine.test_encryption.executor": "Run",
-    "Python.Enigma.executor": "Run",
-    "Python.Enigma.pyw.executor": "Run",
-    "Python.Extras.executor": "Run",
-    "Python.MainWindow.executor": "Run",
-    "Python.PlugBoardWindow.executor": "Run",
-    "Python.RotorAndRotorListModule.executor": "Run",
-    "Python.RotorMaker.executor": "Run",
-    "Python.mainAppFile.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_RotorAndRotorListModule.TestEnigma_Engine.test_encryption.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Enigma.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Enigma.pyw.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Extras.executor&quot;: &quot;Run&quot;,
+    &quot;Python.MainWindow.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PlugBoardWindow.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RotorAndRotorListModule.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RotorMaker.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mainAppFile.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg" />
       <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Windows" />
+      <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Images" />
       <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Sprinty" />
       <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Tests" />
-      <recent name="C:\Users\mikol\PycharmProjects\Enigma_projekt_npg\Images" />
     </key>
   </component>
   <component name="RunManager">
@@ -143,7 +145,6 @@
       <list>
         <item itemvalue="Python.MainWindow" />
         <item itemvalue="Python tests.Python tests for test_RotorAndRotorListModule.TestEnigma_Engine.test_encryption" />
-        <item itemvalue="Python.mainAppFile" />
         <item itemvalue="Python tests.Python tests for test_RotorAndRotorListModule.TestEnigma_Engine.test_encryption" />
       </list>
     </recent_temporary>
@@ -169,7 +170,7 @@
       <workItem from="1747670549186" duration="30951000" />
       <workItem from="1748262385822" duration="464000" />
       <workItem from="1748288428309" duration="54095000" />
-      <workItem from="1749023227375" duration="16407000" />
+      <workItem from="1749023227375" duration="22343000" />
     </task>
     <task id="LOCAL-00001" summary="First commmit&#10;&#10;Adding the main file for this project">
       <option name="closed" value="true" />
@@ -331,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749136145477</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Dołączenie okna wyboru enkrypcji/dekrypcji do Enigma.pyw">
+      <option name="closed" value="true" />
+      <created>1749207283673</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1749207283673</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,15 +374,16 @@
     <MESSAGE value="Zmiana layoutu i kilka poprawek" />
     <MESSAGE value="Zmiana layoutu, dodanie przycisków Load, Save and Close i Close razem z odpowiadającymi metodami, kilka poprawek" />
     <MESSAGE value="Połączenie okien i kilka poprawek" />
-    <option name="LAST_COMMIT_MESSAGE" value="Połączenie okien i kilka poprawek" />
+    <MESSAGE value="Dołączenie okna wyboru enkrypcji/dekrypcji do Enigma.pyw" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dołączenie okna wyboru enkrypcji/dekrypcji do Enigma.pyw" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Enigma_projekt_npg$mainAppFile.coverage" NAME="mainAppFile Coverage Results" MODIFIED="1748952080595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Enigma_projekt_npg$RotorAndRotorListModule.coverage" NAME="RotorAndRotorListModule Coverage Results" MODIFIED="1747943992393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
     <SUITE FILE_PATH="coverage/Enigma_projekt_npg$Extras.coverage" NAME="Extras Coverage Results" MODIFIED="1749047502679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
-    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$MainWindow.coverage" NAME="MainWindow Coverage Results" MODIFIED="1749047169400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
+    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$MainWindow.coverage" NAME="MainWindow Coverage Results" MODIFIED="1749227773905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Enigma_projekt_npg$PlugBoardWindow.coverage" NAME="PlugBoardWindow Coverage Results" MODIFIED="1749053744008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
-    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$Enigma_pyw.coverage" NAME="Enigma.pyw Coverage Results" MODIFIED="1749196993754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Enigma_projekt_npg$Enigma_pyw.coverage" NAME="Enigma.pyw Coverage Results" MODIFIED="1749249269829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Enigma_projekt_npg$Enigma.coverage" NAME="Enigma Coverage Results" MODIFIED="1749047852089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Enigma_projekt_npg$RotorMaker.coverage" NAME="RotorMaker Coverage Results" MODIFIED="1748858098623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdditionalModules" />
     <SUITE FILE_PATH="coverage/Enigma_projekt_npg$.coverage" NAME=" Coverage Results" MODIFIED="1747996250894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />

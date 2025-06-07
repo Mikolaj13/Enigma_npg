@@ -1,14 +1,15 @@
 from tkinter import *
 
 class ButtonIOMaker:
-    def __init__(self, row, col, text, window,colour):
+    def __init__(self, row:int, col:int, text:str, window:Tk,colour:str):
+
         self.window = window
         self.colour = colour
         self.button = Button(window,width=4, height=2 , text=text, bg="light grey")
         self.button.grid(row=row, column=col)
         self.button.config(state=DISABLED)
 
-    def clicked(self):
+    def clicked(self)->None:
         self.button.config(bg=self.colour)
         self.window.after(200, lambda: self.button.config(bg="light grey"))
 

@@ -1,3 +1,4 @@
+import os
 from tkinter import *
 from string import ascii_uppercase
 
@@ -7,7 +8,7 @@ class PlugBoardWindow(Tk):
     def __init__(self):
         super().__init__()
         self.title("Plug Board")
-        ico_path = os.path.join("..", "images", "favicon.ico")
+        ico_path = os.path.join( "Images", "favicon.ico")
         self.iconbitmap(ico_path)
 
     # Przyciski do liter

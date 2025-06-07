@@ -1,3 +1,4 @@
+import os
 from tkinter import *
 from tkinter import filedialog
 from AdditionalModules.RotorAndRotorListModule import Enigma_Engine
@@ -7,14 +8,14 @@ import string
 
 
 class EnigmaApp(Tk):
-    def __init__(self,setting_list,plug_board,is_it_encryption_or_decryption=True):
+    def __init__(self,setting_list:list[int],plug_board:dict[str,str],is_it_encryption_or_decryption: bool=True):
         super().__init__()
         self.is_it_encryption_or_decryption = is_it_encryption_or_decryption
         self.enigma_engine = Enigma_Engine(Extras.rotor_list[:len(setting_list)],plug_board)
         self.enigma_engine.setting(setting_list)
 
         self.title("Enigma")
-        ico_path = os.path.join("..", "images", "favicon.ico")
+        ico_path = os.path.join( "Images", "favicon.ico")
         self.iconbitmap(ico_path)
         #pola tekstowe
         self.IO_text_fields = Widgets.TextIOPair(10,self)
@@ -24,7 +25,7 @@ class EnigmaApp(Tk):
         Button(self,text="Load",width=15,height=2,command=lambda: self.load()).grid(row=0,column=13,columnspan=3)
         Button(self, text="Save and close", width=15, height=2, command=lambda: self.save_and_close()).grid(row=0, column=16, columnspan=3)
         Button(self, text="Close", width=15, height=2, command=lambda: self.destroy()).grid(row=0,column=19,columnspan=3)
-        #
+        # opis
         Label(self, text=Extras.opis).grid(row=1, column=13, columnspan=12, rowspan=7)
         #listy "światełek"
         self.list_of_output_buttons = list()
@@ -41,7 +42,7 @@ class EnigmaApp(Tk):
 
 
     # metoda sczytująca input z klawiatury
-    def on_key_press(self,event):
+    def on_key_press(self,event)-> None:
 
         character = event.char.upper()
 
@@ -50,6 +51,8 @@ class EnigmaApp(Tk):
             if self.IO_text_fields.getlastletter() in string.ascii_uppercase:
                 self.enigma_engine.backspace()
             self.IO_text_fields.backspace()
+
+
         #nie wiem po co to jest ale bez tego przy naciśnięciu shifta rotory się obracają niepotrzebnie
         elif event.keysym == "LeftShift":
             pass
@@ -72,7 +75,7 @@ class EnigmaApp(Tk):
 
 
     # metoda do ładowania plików
-    def load(self):
+    def load(self)->None:
         filepath = filedialog.askopenfilename(
             title="Wybierz plik tekstowy",
             filetypes=[("Pliki tekstowe", "*.txt")]
@@ -102,7 +105,7 @@ class EnigmaApp(Tk):
             return None
 
     #metoda do zapisywania plików
-    def save_and_close(self):
+    def save_and_close(self)->None:
         filepath = filedialog.asksaveasfilename(
             defaultextension=".txt",
             filetypes=[("Pliki tekstowe", "*.txt")],

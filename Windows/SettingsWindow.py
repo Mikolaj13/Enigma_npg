@@ -1,10 +1,11 @@
+import os
 from tkinter import *
 
 class SettingWindow(Tk):
     def __init__(self):
         super().__init__()
         self.title("Settings")
-        ico_path = os.path.join("..", "images", "favicon.ico")
+        ico_path = os.path.join( "Images", "favicon.ico")
         self.iconbitmap(ico_path)
 
         self.rotor_count = 3
