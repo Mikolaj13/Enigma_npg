@@ -23,13 +23,13 @@ Użytkownik może wybrać liczbę rotorów w zakresie od dwóch do pięciu.
 Istnieje możliwość ustawienia pozycji startowej każdego
 rotora, co zwiększa liczbę możliwych kombinacji szyfru.
 
-Translacja oraz ustawienia rotorów mogą być zapisywane i wczytywane, co pozwala na
-zachowanie kluczy szyfrujących.
+Translacja oraz ustawienia rotorów mogą być zapisywane i wczytywane, co pozwala
+na zachowanie kluczy szyfrujących.
 
 Obsługa wiadomości:
 
-Możliwość wgrywania oraz zapisywania zaszyfrowanych i odszyfrowanych wiadomości w
-formacie tekstowym.
+Możliwość wgrywania oraz zapisywania zaszyfrowanych i odszyfrowanych wiadomości
+w formacie tekstowym.
 
 Intuicyjny interfejs do zarządzania wiadomościami i konfiguracją szyfrowania.
 
