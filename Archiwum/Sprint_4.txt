@@ -1,0 +1,35 @@
+Sprint: 4
+Czas trwania sprintu: 04.06 – 09.06.2025
+Zespół: Mikołaj Dworak, Dawid Giełdoń, Piotr Ficek, Ludwik Fonfara
+Scrum Master: Piotr Ficek
+
+Cel sprintu:
+Finalizacja projektu Enigma poprzez integrację wszystkich komponentów graficznych, ujednolicenie stylu interfejsu (czcionki, ikony), poprawki błędów oraz przygotowanie gotowej wersji aplikacji do prezentacji.
+
+Zadania sprintu:
+1.Stylizacja GUI
+
+    Zastosowanie odpowiednich czcionek stylizowanych wybranych w 1. sprincie.
+
+    Dodanie ikon okien.
+
+    Ujednolicenie kolorystyki i stylu całej aplikacji.
+
+2.Połączenie wszystkich komponentów
+
+    Zintegrowanie okna Plugboard, Settings i Szyfrowania w jedną spójną aplikację.
+
+    Opracowanie płynnego przepływu użytkownika (user flow) – od konfiguracji po szyfrowanie.
+
+    Testowanie końcowe
+
+3.Testy funkcjonalne całej aplikacji.
+
+    Weryfikacja poprawności szyfrowania.
+
+    Kontrola poprawności przechodzenia między oknami i działania interakcji.
+
+    Poprawki i optymalizacja
+
+    Optymalizacja kodu GUI oraz logiki.
+

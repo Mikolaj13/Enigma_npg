@@ -1,0 +1,36 @@
+Sprint: 3
+Czas trwania sprintu: 28.05 – 03.06.2025
+Zespół: Mikołaj Dworak, Dawid Giełdoń, Piotr Ficek, Ludwik Fonfara
+Scrum Master: Ludwik Fonfara
+
+Cel sprintu:
+Rozbudowa środowiska graficznego aplikacji Enigma poprzez implementację i integrację
+kluczowych komponentów interfejsu: okna Plugboard, okna Settings, oraz okna Szyfrowania.
+
+Zadania sprintu:
+1.Implementacja okna Plugboard
+
+    Utworzenie siatki przycisków symbolizujących kable i litery alfabetu.
+
+    Dodanie funkcjonalności do parowania liter (symulacja kabli).
+
+    Zapewnienie czytelnego i intuicyjnego interfejsu.
+
+2.Stworzenie okna Settings
+
+    Możliwość wyboru ilości rotorów.
+
+    Ustawienie pozycji startowej rotorów.
+
+3.Implementacja okna szyfrowania
+
+    Pole wejściowe do wpisywania tekstu.
+
+    Pole wyjściowe do wyświetlania zaszyfrowanego tekstu.
+
+4.Integracja z istniejącym kodem
+
+    Połączenie GUI z logiką szyfrowania maszyny Enigma.
+
+    Sprawdzenie, czy konfiguracje z okna Settings i Plugboard poprawnie wpływają na proces szyfrowania.
+

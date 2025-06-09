@@ -1,3 +1,15 @@
+Instrukcja obsługi:
+Do otwarcia aplikacji służy plik Enigma.pyw.
+1) Plugboard - kliknięcie dwuch przycisków z literami, zamienia je miejscami. Przycisk reset wraca 
+wszystkie przyciski na ich miejsca. Przycisk continue przenosi do następnego okna.
+2) Settings - przyciski add i subrtract a rotor zmieniają ilość rotorów w przedziale od 2 do 5. Przyciski + i - 
+zmieniają startowe ustawienie rotorów na przedziale od 0 do 25. Przycisk reset zmienia wszystkie ustawienia na 0.
+Przycisk continue przenosi do następnego okna.
+3) Encoding/Decoding - przycisk encoding wybiera szyfrowanie, a decoding odszyfrowywanie.
+4) Enigma - pisanie na klawiaturze powoduje szyfrowanie (tylko alfabet łaciński, cyfry i znaki interpunkcyjne), można
+cofać tekst klawiszem BackSpace. Przycisk Load otwiera okno wyboru pliku tekstowego. Przycisk Save and close otwiera 
+okno zapisu pliku tekstowego, a po wyborze zamyka okno. Przycisk Close zamyka okno
+
 Cel projektu:
 Tworzymy nowoczesną aplikację szyfrującą, inspirowaną zasadą działania historycznej maszyny
 Enigma, dostosowaną do współczesnych potrzeb edukacyjnych, hobbystycznych i demonstracyjnych.
@@ -46,7 +58,7 @@ Język programowania: Python
 
 Biblioteki: Tkinter (GUI), opcjonalnie inne moduły Python standard library
 
-Formaty plików: .txt (wiadomości), .json lub .ini (konfiguracja szyfru)
+Formaty plików: .txt (wiadomości)
 
 Potencjał i zastosowania
 Aplikacja może pełnić funkcję edukacyjną, tłumacząc zasady kryptografii na przykładzie Enigmy.
@@ -54,5 +66,4 @@ Aplikacja może pełnić funkcję edukacyjną, tłumacząc zasady kryptografii n
 Może być wykorzystywana w celach hobbystycznych przez entuzjastów szyfrowania i historii
 II wojny światowej.
 
-Status i plany rozwoju
-Aktualnie projekt znajduje się na etapie wdrażania głównego silnika szyfrowania oraz projektowania GUI.
+
